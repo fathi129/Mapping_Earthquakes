@@ -6,7 +6,7 @@ Creating interactive maps that are easy to use is an essential skill in the Data
 The GeoJSON format is the industry standard for representing simple geographical features and non-spatial attributes. We explore geographical features such as Points that contain addresses and locations like latitude and longitude co-ordinates. Line Strings have co-ordinates for the boundaries of streets, highways, travel routes, and tectonic plates. Polygons contain co-ordinates for the boundaries of zipcodes,counties,countries,provinces and tracts of land.We will also explore non-spatial attributes, which are data independent of all geometric considerations and packed in the hierarchical structure of a GeoJSON file. Examples include elevation, temperature, rain accumulation, hail size, tornado or hurricane strength, and the magnitude of an earthquake.<br>
 
 ## Purpose of the Analysis
-We will traverse and retrieve GeoJSON earthquake data and tectonic plate data from the USGS website and populate the data on the map using Javascript, D3, Leaflet, and MapBox API. On the map, the magnitude and location of each earth quake will be shown in a pop-up marker. The diameters of the markers for each earthquake reflect the earth quake's magnitude in size and color. Earthquakes with higher magnitude will appear larger and darker in color, with a legend providing the context for our map data. To illustrate the relationship between the location and frequency of seismic activity and tectonic plates. We will add fault lines on the map.<br>
+The aim of this analysis is to traverse and retrieve GeoJSON earthquake data and tectonic plate data from the USGS website and populate the data on the map using Javascript, D3, Leaflet, and MapBox API. On the map, the magnitude and location of each earth quake will be shown in a pop-up marker. The diameters of the markers for each earthquake reflect the earth quake's magnitude in size and color. Earthquakes with higher magnitude will appear larger and darker in color, with a legend providing the context for our map data. To illustrate the relationship between the location and frequency of seismic activity and tectonic plates. We will add fault lines on the map.<br>
 
 ## Resources Used
 *DataSources*: [Earthquakes GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson), [Earthquakes above 4.5mag GeoJSON](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson), [Tectonic Plate GeoJSON](https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json)<br>
@@ -29,6 +29,8 @@ The third layer group variable for the major earthquake data is created,a refere
 ## Deliverable 3: Add an Additional Map
 Using the options from the Mapbox styles,a third map style as a tile layer object is added, the dark map style variable is added to the base layer object. By starting the Python server and launching the index.html file, a map similar to the following image is generated. There are three map styles,such as Streets,Satellite,Dark and displays the two earthquake data sets and the tectonic plate data.<br>
 <img src = "https://github.com/fathi129/Mapping_Earthquakes/blob/master/Screenshots%20Mapping_earthquake/dark_Layer.png"  width = 800><br>
+<img src = "https://github.com/fathi129/Mapping_Earthquakes/blob/master/Screenshots%20Mapping_earthquake/satellite_tect.png"  width = 800><br>
+<img src = "https://github.com/fathi129/Mapping_Earthquakes/blob/master/Screenshots%20Mapping_earthquake/Major_EQ.png"  width = 800><br>
 
 
 
